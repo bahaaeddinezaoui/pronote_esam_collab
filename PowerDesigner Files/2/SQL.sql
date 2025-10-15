@@ -1,9 +1,213 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     10/14/2025 2:54:37 PM                        */
+/* Created on:     10/14/2025 9:37:40 PM                        */
 /*==============================================================*/
 
 
+alter table ABSENCE 
+   drop foreign key FK_ABSENCE_TAKES_PLA_STUDY_SE;
+
+alter table ADMINISTRATOR 
+   drop foreign key FK_ADMINIST_ADMINISTR_USER_ACC;
+
+alter table CLASS 
+   drop foreign key FK_CLASS_CLASS_USE_USER_ACC;
+
+alter table OBSERVATION 
+   drop foreign key FK_OBSERVAT_HAPPENS_I_STUDY_SE;
+
+alter table RECEIVES 
+   drop foreign key FK_RECEIVES_RECEIVES_ADMINIST;
+
+alter table RECEIVES 
+   drop foreign key FK_RECEIVES_RECEIVES2_NOTIFICA;
+
+alter table SECTION 
+   drop foreign key FK_SECTION_BELONGS_T_CATEGORY;
+
+alter table SENDS 
+   drop foreign key FK_SENDS_SENDS_CLASS;
+
+alter table SENDS 
+   drop foreign key FK_SENDS_SENDS2_NOTIFICA;
+
+alter table STUDENT 
+   drop foreign key FK_STUDENT_BELONGS_T_SECTION;
+
+alter table STUDENT 
+   drop foreign key FK_STUDENT_IS_OF_CAT_CATEGORY;
+
+alter table STUDENT_GETS_ABSENT 
+   drop foreign key FK_STUDENT__STUDENT_G_ABSENCE;
+
+alter table STUDENT_GETS_ABSENT 
+   drop foreign key FK_STUDENT__STUDENT_G_STUDENT;
+
+alter table STUDIES 
+   drop foreign key FK_STUDIES_STUDIES_MAJOR;
+
+alter table STUDIES 
+   drop foreign key FK_STUDIES_STUDIES2_SECTION;
+
+alter table STUDIES_IN 
+   drop foreign key FK_STUDIES__STUDIES_I_STUDY_SE;
+
+alter table STUDIES_IN 
+   drop foreign key FK_STUDIES__STUDIES_I_SECTION;
+
+alter table STUDY_SESSION 
+   drop foreign key FK_STUDY_SE_TEACHES_I_TEACHER;
+
+alter table TEACHER_GETS_ABSENT 
+   drop foreign key FK_TEACHER__TEACHER_G_ABSENCE;
+
+alter table TEACHER_GETS_ABSENT 
+   drop foreign key FK_TEACHER__TEACHER_G_TEACHER;
+
+alter table TEACHER_MAKES_AN_OBSERVATION_FOR_A_STUDENT 
+   drop foreign key FK_TEACHER__TEACHER_M_TEACHER;
+
+alter table TEACHER_MAKES_AN_OBSERVATION_FOR_A_STUDENT 
+   drop foreign key FK_TEACHER__TEACHER_M_STUDENT;
+
+alter table TEACHER_MAKES_AN_OBSERVATION_FOR_A_STUDENT 
+   drop foreign key FK_TEACHER__TEACHER_M_OBSERVAT;
+
+alter table TEACHES 
+   drop foreign key FK_TEACHES_TEACHES_TEACHER;
+
+alter table TEACHES 
+   drop foreign key FK_TEACHES_TEACHES2_MAJOR;
+
+
+alter table ABSENCE 
+   drop foreign key FK_ABSENCE_TAKES_PLA_STUDY_SE;
+
+drop table if exists ABSENCE;
+
+
+alter table ADMINISTRATOR 
+   drop foreign key FK_ADMINIST_ADMINISTR_USER_ACC;
+
+drop table if exists ADMINISTRATOR;
+
+drop table if exists CATEGORY;
+
+
+alter table CLASS 
+   drop foreign key FK_CLASS_CLASS_USE_USER_ACC;
+
+drop table if exists CLASS;
+
+drop table if exists MAJOR;
+
+drop table if exists NOTIFICATION;
+
+
+alter table OBSERVATION 
+   drop foreign key FK_OBSERVAT_HAPPENS_I_STUDY_SE;
+
+drop table if exists OBSERVATION;
+
+
+alter table RECEIVES 
+   drop foreign key FK_RECEIVES_RECEIVES2_NOTIFICA;
+
+alter table RECEIVES 
+   drop foreign key FK_RECEIVES_RECEIVES_ADMINIST;
+
+drop table if exists RECEIVES;
+
+
+alter table SECTION 
+   drop foreign key FK_SECTION_BELONGS_T_CATEGORY;
+
+drop table if exists SECTION;
+
+
+alter table SENDS 
+   drop foreign key FK_SENDS_SENDS2_NOTIFICA;
+
+alter table SENDS 
+   drop foreign key FK_SENDS_SENDS_CLASS;
+
+drop table if exists SENDS;
+
+
+alter table STUDENT 
+   drop foreign key FK_STUDENT_IS_OF_CAT_CATEGORY;
+
+alter table STUDENT 
+   drop foreign key FK_STUDENT_BELONGS_T_SECTION;
+
+drop table if exists STUDENT;
+
+
+alter table STUDENT_GETS_ABSENT 
+   drop foreign key FK_STUDENT__STUDENT_G_STUDENT;
+
+alter table STUDENT_GETS_ABSENT 
+   drop foreign key FK_STUDENT__STUDENT_G_ABSENCE;
+
+drop table if exists STUDENT_GETS_ABSENT;
+
+
+alter table STUDIES 
+   drop foreign key FK_STUDIES_STUDIES2_SECTION;
+
+alter table STUDIES 
+   drop foreign key FK_STUDIES_STUDIES_MAJOR;
+
+drop table if exists STUDIES;
+
+
+alter table STUDIES_IN 
+   drop foreign key FK_STUDIES__STUDIES_I_SECTION;
+
+alter table STUDIES_IN 
+   drop foreign key FK_STUDIES__STUDIES_I_STUDY_SE;
+
+drop table if exists STUDIES_IN;
+
+
+alter table STUDY_SESSION 
+   drop foreign key FK_STUDY_SE_TEACHES_I_TEACHER;
+
+drop table if exists STUDY_SESSION;
+
+drop table if exists TEACHER;
+
+
+alter table TEACHER_GETS_ABSENT 
+   drop foreign key FK_TEACHER__TEACHER_G_TEACHER;
+
+alter table TEACHER_GETS_ABSENT 
+   drop foreign key FK_TEACHER__TEACHER_G_ABSENCE;
+
+drop table if exists TEACHER_GETS_ABSENT;
+
+
+alter table TEACHER_MAKES_AN_OBSERVATION_FOR_A_STUDENT 
+   drop foreign key FK_TEACHER__TEACHER_M_STUDENT;
+
+alter table TEACHER_MAKES_AN_OBSERVATION_FOR_A_STUDENT 
+   drop foreign key FK_TEACHER__TEACHER_M_OBSERVAT;
+
+alter table TEACHER_MAKES_AN_OBSERVATION_FOR_A_STUDENT 
+   drop foreign key FK_TEACHER__TEACHER_M_TEACHER;
+
+drop table if exists TEACHER_MAKES_AN_OBSERVATION_FOR_A_STUDENT;
+
+
+alter table TEACHES 
+   drop foreign key FK_TEACHES_TEACHES2_MAJOR;
+
+alter table TEACHES 
+   drop foreign key FK_TEACHES_TEACHES_TEACHER;
+
+drop table if exists TEACHES;
+
+drop table if exists USER_ACCOUNT;
 
 /*==============================================================*/
 /* Table: ABSENCE                                               */
