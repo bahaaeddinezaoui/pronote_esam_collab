@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>pronote_esam - Copy</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bss-overrides.css">
+    <link rel="stylesheet" href="assets/css/Add-Another-Button.css">
+    <link rel="stylesheet" href="assets/css/Custom-Checkbox.css">
+    <link rel="stylesheet" href="assets/css/dmp_Inputs_Generic_Field_Label.css">
+    <link rel="stylesheet" href="assets/css/Dynamic-Table.css">
+    <link rel="stylesheet" href="assets/css/Form-Select---Full-Date---Month-Day-Year.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/css/theme.bootstrap_4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/Large-Dropdown-Menu-BS3-LMBS3.css">
+    <link rel="stylesheet" href="assets/css/Large-Dropdown-Menu-BS3.css">
+    <link rel="stylesheet" href="assets/css/Login-with-overlay-image.css">
+    <link rel="stylesheet" href="assets/css/Ludens---1-Index-Table-with-Search--Sort-Filters-v20.css">
+    <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css">
+    <link rel="stylesheet" href="assets/css/Off-Canvas-Sidebar-Drawer-Navbar.css">
+    <link rel="stylesheet" href="assets/css/Search-Field-With-Icon.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md py-3">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded text-success d-flex justify-content-center align-items-center me-2 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bezier">
+                        <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"></path>
+                        <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"></path>
+                    </svg></span><span>PRO-NOTE</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-4"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse flex-grow-0 order-md-first" id="navcol-4">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Tutorial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Classes</a></li>
+                </ul>
+                <div class="d-md-none my-2"><button class="btn btn-light me-2" type="button">Button</button><button class="btn btn-primary" type="button">Button</button></div>
+            </div>
+            <div class="d-none d-md-block"><a class="btn btn-success" role="button" href="#">Login (Admin)</a></div>
+        </div>
+    </nav>
+    <section>
+        <h1 class="text-center">Check Observations</h1>
+        <div class="row text-center mt-5">
+            <div class="col mb-5"><label class="form-label fs-5 text-center ms-4 mt-3" style="margin-bottom: 0px;">Enter date &amp; time</label><input class="h-75 ms-3" type="date" style="border-top-left-radius: 6px;border-top-right-radius: 6px;border-bottom-right-radius: 6px;border-bottom-left-radius: 6px;"></div>
+        </div>
+        <div class="row mt-3 mb-4">
+            <div class="col text-center"><button class="btn btn-outline-primary text-truncate float-none float-sm-none add-another-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Class 01</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div> 
+            <label for="name">إسم الأستاذ</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">المادة المدرسة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفئة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفصيلة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>سبب الغياب</th>
+        <th>الملاحظة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>تصرف الطالب</th>
+        <th>ملاحظة الأستاذ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+            <div class="col text-center"><button class="btn btn-outline-primary text-truncate float-none float-sm-none add-another-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Class 02</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div> 
+            <label for="name">إسم الأستاذ</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">المادة المدرسة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفئة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفصيلة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>سبب الغياب</th>
+        <th>الملاحظة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>تصرف الطالب</th>
+        <th>ملاحظة الأستاذ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+        </div>
+        <div class="row mt-3 mb-4">
+            <div class="col text-center"><button class="btn btn-outline-primary text-truncate float-none float-sm-none add-another-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Class 03</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div> 
+            <label for="name">إسم الأستاذ</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">المادة المدرسة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفئة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفصيلة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>سبب الغياب</th>
+        <th>الملاحظة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>تصرف الطالب</th>
+        <th>ملاحظة الأستاذ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+            <div class="col text-center"><button class="btn btn-outline-primary text-truncate float-none float-sm-none add-another-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Class 04</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div> 
+            <label for="name">إسم الأستاذ</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">المادة المدرسة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفئة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفصيلة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>سبب الغياب</th>
+        <th>الملاحظة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>تصرف الطالب</th>
+        <th>ملاحظة الأستاذ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+        </div>
+        <div class="row mt-3 mb-4">
+            <div class="col text-center"><button class="btn btn-outline-primary text-truncate float-none float-sm-none add-another-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Class 05</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div> 
+            <label for="name">إسم الأستاذ</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">المادة المدرسة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفئة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفصيلة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>سبب الغياب</th>
+        <th>الملاحظة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>تصرف الطالب</th>
+        <th>ملاحظة الأستاذ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+            <div class="col text-center"><button class="btn btn-outline-primary text-truncate float-none float-sm-none add-another-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Class 06</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div> 
+            <label for="name">إسم الأستاذ</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">المادة المدرسة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفئة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفصيلة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>سبب الغياب</th>
+        <th>الملاحظة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>تصرف الطالب</th>
+        <th>ملاحظة الأستاذ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+        </div>
+        <div class="row mt-3 mb-4">
+            <div class="col text-center"><button class="btn btn-outline-primary text-truncate float-none float-sm-none add-another-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Class 07</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div> 
+            <label for="name">إسم الأستاذ</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">المادة المدرسة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفئة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفصيلة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>سبب الغياب</th>
+        <th>الملاحظة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>تصرف الطالب</th>
+        <th>ملاحظة الأستاذ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+            <div class="col text-center"><button class="btn btn-outline-primary text-truncate float-none float-sm-none add-another-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Class 08</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div> 
+            <label for="name">إسم الأستاذ</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">المادة المدرسة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفئة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفصيلة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>سبب الغياب</th>
+        <th>الملاحظة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>تصرف الطالب</th>
+        <th>ملاحظة الأستاذ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+        </div>
+        <div class="row mt-3 mb-4">
+            <div class="col text-center"><button class="btn btn-outline-primary text-truncate float-none float-sm-none add-another-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Class 09</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div> 
+            <label for="name">إسم الأستاذ</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">المادة المدرسة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفئة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفصيلة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>سبب الغياب</th>
+        <th>الملاحظة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>تصرف الطالب</th>
+        <th>ملاحظة الأستاذ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+            <div class="col text-center"><button class="btn btn-outline-primary text-truncate float-none float-sm-none add-another-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Class 10</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div> 
+            <label for="name">إسم الأستاذ</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">المادة المدرسة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفئة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفصيلة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>سبب الغياب</th>
+        <th>الملاحظة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>تصرف الطالب</th>
+        <th>ملاحظة الأستاذ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+        </div>
+        <div class="row mt-3 mb-4">
+            <div class="col text-center"><button class="btn btn-outline-primary text-truncate float-none float-sm-none add-another-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Class 11</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div> 
+            <label for="name">إسم الأستاذ</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">المادة المدرسة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفئة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفصيلة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>سبب الغياب</th>
+        <th>الملاحظة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>تصرف الطالب</th>
+        <th>ملاحظة الأستاذ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+            <div class="col text-center"><button class="btn btn-outline-primary text-truncate float-none float-sm-none add-another-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Class 12</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div> 
+            <label for="name">إسم الأستاذ</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">المادة المدرسة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفئة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفصيلة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>سبب الغياب</th>
+        <th>الملاحظة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>تصرف الطالب</th>
+        <th>ملاحظة الأستاذ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+        </div>
+        <div class="row mt-3 mb-4">
+            <div class="col text-center"><button class="btn btn-outline-primary text-truncate float-none float-sm-none add-another-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Class 13</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div> 
+            <label for="name">إسم الأستاذ</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">المادة المدرسة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفئة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفصيلة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>سبب الغياب</th>
+        <th>الملاحظة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>تصرف الطالب</th>
+        <th>ملاحظة الأستاذ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+            <div class="col text-center"><button class="btn btn-outline-primary text-truncate float-none float-sm-none add-another-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Class 14</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div> 
+            <label for="name">إسم الأستاذ</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">المادة المدرسة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفئة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفصيلة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>سبب الغياب</th>
+        <th>الملاحظة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>تصرف الطالب</th>
+        <th>ملاحظة الأستاذ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+        </div>
+        <div class="row mt-3 mb-4">
+            <div class="col text-center"><button class="btn btn-outline-primary text-truncate float-none float-sm-none add-another-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Class 15</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div> 
+            <label for="name">إسم الأستاذ</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">المادة المدرسة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفئة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفصيلة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>سبب الغياب</th>
+        <th>الملاحظة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>تصرف الطالب</th>
+        <th>ملاحظة الأستاذ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+            <div class="col text-center"><button class="btn btn-outline-primary text-truncate float-none float-sm-none add-another-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Class 16</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div> 
+            <label for="name">إسم الأستاذ</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">المادة المدرسة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفئة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+                   <div> 
+            <label for="name">الفصيلة</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>سبب الغياب</th>
+        <th>الملاحظة</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+          
+<table>
+  <thead>
+    <tr>
+      <th>الإسم</th>
+        <th>اللقب</th>
+        <th>تصرف الطالب</th>
+        <th>ملاحظة الأستاذ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+      <td>Data Cell 3</td>
+      <td>Data Cell 4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+        </div>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.flash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.print.min.js"></script>
+    <script src="assets/js/Off-Canvas-Sidebar-Drawer-Navbar-swipe.js"></script>
+    <script src="assets/js/DataTable---Fully-BSS-Editable-style.js"></script>
+    <script src="assets/js/Off-Canvas-Sidebar-Drawer-Navbar-off-canvas-sidebar.js"></script>
+    <script src="assets/js/Dynamic-Table-dynamic-table.js"></script>
+    <script src="assets/js/Dynamically-Add-Remove-Table-Row-style.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-filter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-storage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/js/Ludens---1-Index-Table-with-Search--Sort-Filters-v20-Ludens---1-Index-Table-with-Search--Sort-Filters.js"></script>
+    <script src="assets/js/Ludens---1-Index-Table-with-Search--Sort-Filters-v20-Ludens---Material-UI-Actions.js"></script>
+</body>
+
+</html>

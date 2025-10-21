@@ -1,0 +1,9 @@
+label {
+  display: inline-block;
+}
+
+.form-label {
+  margin-bottom: .5rem;
+  color: rgba(0,0,0,.6);
+}
+
