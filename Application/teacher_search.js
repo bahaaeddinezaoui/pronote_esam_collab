@@ -296,6 +296,25 @@ $(document).ready(function () {
             $('#presentees-count').val(presenteeCount);
             $('#absentees-display').text(absenteeCount);
         }
+
+        // Helper function to check if a student is already in the absentees table
+        function isStudentAlreadyAdded(firstName, lastName) {
+            const $existingRows = $('#ipi-table tbody tr');
+            let isDuplicate = false;
+            
+            $existingRows.each(function() {
+                const existingFirstName = $(this).find('.student-search-input').val().trim();
+                const existingLastName = $(this).find('.student-last-name').text().trim();
+                
+                if (existingFirstName === firstName && existingLastName === lastName) {
+                    isDuplicate = true;
+                    return false; // Break the loop
+                }
+            });
+            
+            return isDuplicate;
+        }
+
         // Function to add a new row to the Absentees table
         function addAbsenteeRow() {
             const totalStudents = parseInt($('#total-students').text(), 10);
@@ -395,11 +414,18 @@ $(document).ready(function () {
             });
         });
 
-        // Event delegation for clicking a result in absentee table
+        // Event delegation for clicking a result in absentee table - UPDATED to check for duplicates
         $('#ipi-table tbody').on('click', '.student-search-results-absentee .result-item', function() {
             const $item = $(this);
             const firstName = $item.attr('data-first-name');
             const lastName = $item.attr('data-last-name');
+            
+            // Check if student is already added
+            if (isStudentAlreadyAdded(firstName, lastName)) {
+                alert("This student is already in the absentees table.");
+                $item.parent().hide().empty();
+                return;
+            }
             
             const $row = $item.closest('tr');
             $row.find('.student-search-input').val(firstName);
