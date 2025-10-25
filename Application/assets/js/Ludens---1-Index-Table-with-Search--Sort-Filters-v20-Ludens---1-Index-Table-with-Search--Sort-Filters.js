@@ -28,7 +28,7 @@ $(function() {
 		widthFixed : true,
 
 		// initialize zebra striping and filter widgets
-		widgets : [ "filter", "columns", "zebra" ],
+		widgets : [ "columns", "zebra" ], // Removed "filter" widget to disable filter row
 
 		ignoreCase: false,
 
