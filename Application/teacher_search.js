@@ -507,3 +507,95 @@ $(document).ready(function () {
             });
         });
     });
+
+        // Function to add a new row to the Behavior table
+        function addBehaviorRow() {
+            const $tableBody = $('#ipi-table tbody').last(); // Target the behavior table tbody (second one)
+            const uniqueId = Date.now(); // Add a unique identifier
+            
+            const newRowHtml = `
+                <tr data-id="${uniqueId}">
+                    <td style="position: relative;">
+                        <input type="text" class="form-control behavior-student-search-input" placeholder="Enter Student Name">
+                        <div class="behavior-student-search-results" style="display: none; position: absolute; background-color: white; border: 1px solid #ccc; z-index: 1000; width: 100%;"></div>
+                    </td>
+                    <td><input type="text" class="form-control" placeholder="Enter Motif"></td>
+                    <td><input type="text" class="form-control" placeholder="Enter Note"></td>
+                    <td class="text-center align-middle" style="max-height: 60px; height: 60px">
+                        <a class="btn btnMaterial btn-flat primary semicircle" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="far fa-eye"></i></a>
+                        <a class="btn btnMaterial btn-flat success semicircle" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-pen"></i></a>
+                        <a class="btn btnMaterial btn-flat accent btnNoBorders checkboxHover" role="button" data-bs-target="#delete-modal" data-bs-toggle="modal" href="#" style="margin-left: 5px">
+                            <i class="fas fa-trash btnNoBorders" style="color: #dc3545"></i>
+                        </a>
+                    </td>
+                </tr>
+            `;
+
+            $tableBody.append(newRowHtml);
+        }
+
+        // Event handler for Add Student Behavior button
+        $(document).off('click', '#add-student-behavior-btn').on('click', '#add-student-behavior-btn', function () {
+            addBehaviorRow();
+        });
+
+        // Event delegation for student search in behavior table
+        $('#ipi-table tbody').last().on('keyup', '.behavior-student-search-input', function() {
+            const $input = $(this);
+            const query = $input.val().trim();
+            const $resultsContainer = $input.next('.behavior-student-search-results');
+            
+            const sections = $("input[name='sections[]']:checked").map(function () {
+                return $(this).val();
+            }).get();
+
+            if (query.length === 0 || sections.length === 0) {
+                $resultsContainer.hide().empty();
+                return;
+            }
+
+            $.ajax({
+                url: "student_search.php",
+                method: "GET",
+                data: { q: query, sections: sections },
+                dataType: "json",
+                success: function (data) {
+                    $resultsContainer.empty();
+
+                    if (data.error || !data || data.length === 0) {
+                        $resultsContainer.append('<div class="p-2 text-muted">No students found</div>');
+                    } else {
+                        data.slice(0, 5).forEach((student) => {
+                            const firstName = student.STUDENT_FIRST_NAME || '';
+                            const lastName = student.STUDENT_LAST_NAME || '';
+                            const studentId = student.STUDENT_ID || '';
+                            const $item = $("<div>")
+                                .addClass("p-2 result-item")
+                                .attr('data-id', studentId)
+                                .attr('data-first-name', firstName)
+                                .attr('data-last-name', lastName)
+                                .css({ cursor: "pointer", "border-bottom": "1px solid #eee" })
+                                .text(`${firstName} ${lastName}`);
+                            $resultsContainer.append($item);
+                        });
+                    }
+
+                    $resultsContainer.show();
+                },
+                error: function () {
+                    $resultsContainer.html('<div class="p-2 text-danger">Error fetching data</div>').show();
+                }
+            });
+        });
+
+        // Event delegation for clicking a result in behavior table
+        $('#ipi-table tbody').last().on('click', '.behavior-student-search-results .result-item', function() {
+            const $item = $(this);
+            const firstName = $item.attr('data-first-name');
+            const lastName = $item.attr('data-last-name');
+            
+            const $row = $item.closest('tr');
+            $row.find('.behavior-student-search-input').val(`${firstName} ${lastName}`);
+            
+            $item.parent().hide().empty();
+        });
