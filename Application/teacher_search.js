@@ -242,7 +242,7 @@ $(document).ready(function () {
                                                     $catContainer.hide();
                                                     
                                                     // Add a small delay to ensure data is set before fetching
-                                                    setTimeout(fetchSections, 0);
+setTimeout(fetchSections, 0);
                                                 });
                                             },
                                             error: function(){
@@ -268,7 +268,7 @@ $(document).ready(function () {
                 console.log('Major data-selected-id before:', $(this).data('selected-id'));
                 fetchSections();
                 console.log('Major data-selected-id after:', $(this).data('selected-id'));
-            });
+});
 
             $('#category-search').on('change', function () {
                 console.log('Category input value:', $(this).val());
@@ -534,9 +534,31 @@ $(document).ready(function () {
             $tableBody.append(newRowHtml);
         }
 
-        // Event handler for Add Student Behavior button
-        $(document).off('click', '#add-student-behavior-btn').on('click', '#add-student-behavior-btn', function () {
-            addBehaviorRow();
+        // Add event listener for "Add Student Behavior" button
+        document.getElementById('add-behavior-btn').addEventListener('click', function () {
+        // Get the behavior table body
+        const behaviorTableBody = document.querySelector('#TableSorterCard-1 table tbody');
+    
+        // Create a new row
+        const newRow = document.createElement('tr');
+    
+        // Define the columns for the new row with input fields
+        newRow.innerHTML = `
+            <td><input type="text" class="form-control" placeholder="Enter Full Name" /></td>
+            <td><input type="text" class="form-control" placeholder="Enter Motif" /></td>
+            <td><input type="text" class="form-control" placeholder="Enter Note" /></td>
+            <td class="text-center align-middle">
+                <button class="btn btn-danger btn-sm delete-row-btn">Delete</button>
+            </td>
+        `;
+    
+        // Append the new row to the table body
+        behaviorTableBody.appendChild(newRow);
+    
+        // Add delete functionality to the new row's delete button
+        newRow.querySelector('.delete-row-btn').addEventListener('click', function () {
+            newRow.remove();
+        });
         });
 
         // Event delegation for student search in behavior table
@@ -599,3 +621,37 @@ $(document).ready(function () {
             
             $item.parent().hide().empty();
         });
+
+// Add event listener for the study session submission button
+document.getElementById('submit-study-session').addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Extract form data
+    const teacherSerialNumber = document.getElementById('teacher-search').value; // Teacher's serial number
+    const studySessionDate = document.querySelector('input[type="date"]').value; // Date
+    const timeSlot = document.querySelector('select').value; // Time slot
+
+    // Split the time slot into start and end times
+    const [studySessionStartTime, studySessionEndTime] = timeSlot.split(' - ');
+
+    // Prepare the data to send
+    const studySessionData = {
+        teacher_serial_number: teacherSerialNumber,
+        study_session_date: studySessionDate,
+        study_session_start_time: studySessionStartTime,
+        study_session_end_time: studySessionEndTime,
+    };
+
+    // Send the data to the server using AJAX
+    $.ajax({
+        url: 'insert_study_session.php', // Backend script to handle the insertion
+        type: 'POST',
+        data: studySessionData,
+        success: function (response) {
+            alert('Study session successfully inserted!');
+        },
+        error: function (xhr, status, error) {
+            alert('An error occurred while inserting the study session: ' + error);
+        },
+    });
+});
